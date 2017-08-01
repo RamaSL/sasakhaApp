@@ -1,0 +1,19 @@
+<ion-view title="Add Marketing Manager" id="Add Marketing Manager">
+  <ion-content padding="true" class="has-header">
+
+<div class="list">
+
+    <a class="item item-avatar" ng-repeat="user in marketingManagerArr" >
+      <img src="img/Profileimages.jpg">
+      <!-- <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i> -->
+      <h2>{{user.user_name}}</h2>
+      <p>{{user.mobile}} &nbsp | &nbsp {{user.email}}</p>
+
+    </a>
+
+
+
+</div>
+
+  </ion-content>
+</ion-view>

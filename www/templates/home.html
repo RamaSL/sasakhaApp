@@ -1,0 +1,61 @@
+<ion-view title="Home" id="home">
+  <ion-content padding="true" class="has-header">
+    
+  
+<div class="card">
+<!-- Admin -->
+  <div class="item item-text-wrap">
+  User Level : {{userType}}
+  <button class="button button-outline button-block button-positive" ng-if="userType == 1">
+  View Jobs
+  </button>
+
+  <button class="button button-outline button-block button-positive" ng-if="userType == 1">
+  View Servie Managers
+  </button>
+
+  <button class="button button-outline button-block button-positive" ui-sref='app.viewMarketingManager' ng-if="userType == 1">
+  View Marketing Managers
+  </button>
+
+  <button class="button button-outline button-block button-positive" ng-if="userType == 1">
+  View Servie Agents
+  </button>
+  
+  <button class="button button-outline button-block button-positive" ng-if="userType == 1">
+  View Marketing Agents
+  </button>
+  
+  <button class="button button-outline button-block button-positive" ng-if="userType == 1">
+  Add Servie Managers
+  </button>
+  
+  <button class="button button-outline button-block button-positive" ui-sref='app.addMarketingManager' ng-if="userType == 1">
+  Add Marketing Managers
+  </button> 
+ 
+  <!-- end of Admin -->
+
+  <!-- Marketing manager -->
+  <!-- <div class="item item-text-wrap" ng-if="userType == 2"> -->
+  
+  <button class="button button-outline button-block button-positive" ng-if="userType == 2">
+  New Jobs
+  </button>
+
+  <button class="button button-outline button-block button-positive" ng-if="userType == 2">
+  View Approved Jobs
+  </button>
+
+  <button class="button button-outline button-block button-positive" ng-if="userType == 2">
+  Add Marketing Agent
+  </button>
+  
+  </div>
+  <!-- end of Marketing manager -->
+
+</div>
+
+
+  </ion-content>
+</ion-view>

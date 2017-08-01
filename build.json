@@ -1,0 +1,11 @@
+{
+ "android": {
+     "release": {
+         "keystore":"c:\\my-release-key.keystore",
+         "storePassword":"1234qwer",
+         "alias":"rama",
+         "password":"1234qwer",
+         "keystoreType":"jks"
+       }
+   }
+}

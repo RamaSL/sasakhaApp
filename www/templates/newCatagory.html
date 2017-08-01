@@ -1,0 +1,35 @@
+<ion-view title="New Catagory" id="newCatagory">
+  <ion-content padding="true" class="has-header">
+
+    <form id="newCatagory-form9" class="list">
+      <label class="item item-input" id="newCatagory-input10">
+        <span class="input-label">Catagory</span>
+        <input type="text" placeholder="">
+      </label>
+
+        <div ng-repeat="column in columns">
+           
+                <div class="item item-input item-button-right" id="newCatagory-input10">
+                    <span class="input-label">Column {{$index +1}}</span>
+                    <input type="text" placeholder="">
+
+                    <button class="button button-clear button-small button-assertive icon ion-android-close" ng-click="removeCol($index)"></button>
+                </div>
+         
+            <!--<div class="col">
+                <button class="button button-outline button-small button-positive icon-center ion-android-close" ng-click="removeCol($index)"></button>
+            </div>-->
+        </div> 
+        <br />
+        <div class="row">
+            <div class="col col-33 col-offset-33" align="right">
+                <button class="button button-outline button-small button-balanced icon-left ion-android-done" ng-click="createCat()">Create</button>
+            </div>
+            <div class="col" align="right">
+                <button class="button button-outline button-small button-positive icon-left ion-android-add" ng-click="addColumn()">Add Column</button>
+            </div>
+        </div>
+    </form>
+
+  </ion-content>
+</ion-view>

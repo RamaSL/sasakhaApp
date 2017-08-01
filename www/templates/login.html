@@ -1,0 +1,19 @@
+<ion-view title="Login" id="login">
+  <ion-content padding="true" class="has-header">
+    <form name="loginForm" class="list">
+      <ion-list id="login-list">
+        <label class="item item-input" id="email">
+          <span class="input-label">Email</span>
+          <input type="email" name="email" ng-model="userData.email" required>
+        </label>
+        <label class="item item-input" id="password">
+          <span class="input-label">Password</span>
+          <input type="password" name="password" ng-model="userData.password" required>
+        </label>
+      </ion-list>
+      <div class="spacer" style="height: 40px;"></div>
+      <button id="loginButton" class="button button-positive  button-block" ng-disabled="loginForm.email.$invalid && loginForm.password.$invalid" ng-click="login()">Log in</button>
+      <a href-inappbrowser="/signup" id="login-button5" class="button button-positive  button-block button-clear">Forgot Password?</a>
+    </form>
+  </ion-content>
+</ion-view>
