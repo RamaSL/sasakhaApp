@@ -19,4 +19,8 @@ angular
 				console.log('error retrieving marketing managers '+response.body);
 			})
 
+		$scope.deleteUser = function(){
+			//body
+		}
+
 	}]);

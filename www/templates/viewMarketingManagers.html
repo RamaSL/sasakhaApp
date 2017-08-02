@@ -1,19 +1,45 @@
 <ion-view title="Add Marketing Manager" id="Add Marketing Manager">
   <ion-content padding="true" class="has-header">
 
-<div class="list">
+<div class="list" >
 
     <a class="item item-avatar" ng-repeat="user in marketingManagerArr" >
+    
       <img src="img/Profileimages.jpg">
       <!-- <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i> -->
-      <h2>{{user.user_name}}</h2>
-      <p>{{user.mobile}} &nbsp | &nbsp {{user.email}}</p>
+
+    <div class="row">
+		<div class="col col-80">    		
+     	<h2>{{user.user_name}}</h2>
+     	<p>{{user.address}}</p>
+     	</div>
+
+     	<div class="col" ng-hide="showDiv">
+     	<button class="button button-clear button-calm" ng-click="showDiv = true"  ><i class="ion-chevron-down"></i></button>
+     	</div>
+
+     	<div class="col" ng-show="showDiv" ng-click="showDiv = false">
+     	<button class="button button-clear button-calm" ng-click="showDiv = true"  ><i class="ion-chevron-up"></i></button>
+     	</div>
+    </div>	
+
+	<div class="row" ng-show="showDiv">
+    <div class="col">
+      	<p>Mobile  :  {{user.mobile}}</p>
+      	<p>Email  :  {{user.email}}</p>
+
+      	<button class="button button-outline button-assertive button-small" ng-click="">Delete User</button>
+    </div>
+	</div>
+
+
+      
+
 
     </a>
 
-
-
 </div>
+
 
   </ion-content>
 </ion-view>
